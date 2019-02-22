@@ -47,7 +47,7 @@ ROOT_URLCONF = 'portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "build")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -116,6 +116,7 @@ STATIC_URL = '/static/'
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT, 'static'),
+    os.path.join(BASE_DIR, 'build/static'),
 ]
 
 # Simplified static file serving.
