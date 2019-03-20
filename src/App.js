@@ -7,6 +7,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Projects from './components/Projects';
+import Books from './components/Books';
 
 const App = () => (
   <div>
@@ -19,6 +20,7 @@ const App = () => (
           <li><Link to="/services">Hire Me</Link></li>
           <li><Link to="/portfolio">Portfolio</Link></li>
           <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/books">Books</Link></li>
         </ul>
 
         <hr />
@@ -28,6 +30,7 @@ const App = () => (
         <Route exact path="/services" component={Services} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/projects" component={Projects} />
+        <Route exact path="/books" component={Books} />
       </div>
     </Router>
 
